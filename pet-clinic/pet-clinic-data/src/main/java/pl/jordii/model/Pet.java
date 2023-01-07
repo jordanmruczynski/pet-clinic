@@ -1,4 +1,4 @@
-package pl.jordii.petclinic.model;
+package pl.jordii.model;
 
 import java.time.LocalDate;
 
