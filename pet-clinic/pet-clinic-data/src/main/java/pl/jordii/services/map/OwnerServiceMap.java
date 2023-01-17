@@ -1,11 +1,13 @@
 package pl.jordii.services.map;
 
+import org.springframework.stereotype.Service;
 import pl.jordii.model.Owner;
 import pl.jordii.services.CrudService;
 import pl.jordii.services.OwnerService;
 
 import java.util.Set;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
 
     @Override

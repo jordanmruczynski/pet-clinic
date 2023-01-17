@@ -1,22 +1,23 @@
 package pl.jordii.boostrap;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 import pl.jordii.model.Owner;
 import pl.jordii.model.Vet;
 import pl.jordii.services.OwnerService;
 import pl.jordii.services.VetService;
-import pl.jordii.services.map.OwnerServiceMap;
-import pl.jordii.services.map.VetServiceMap;
 
 @Component
 public class DataLoader implements CommandLineRunner {
 
     private final OwnerService ownerService;
     private final VetService vetService;
-    public DataLoader() {
-        ownerService = new OwnerServiceMap();
-        vetService = new VetServiceMap();
+
+    //@Autowired
+    public DataLoader(OwnerService ownerService, VetService vetService) {
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
 
     @Override

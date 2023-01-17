@@ -1,5 +1,6 @@
 package pl.jordii.services.map;
 
+import org.springframework.stereotype.Service;
 import pl.jordii.model.Owner;
 import pl.jordii.model.Pet;
 import pl.jordii.services.CrudService;
@@ -7,6 +8,7 @@ import pl.jordii.services.PetService;
 
 import java.util.Set;
 
+@Service
 public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService{
 
     @Override
