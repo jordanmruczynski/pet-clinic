@@ -3,10 +3,11 @@ package pl.jordii.services.map;
 import pl.jordii.model.Owner;
 import pl.jordii.model.Vet;
 import pl.jordii.services.CrudService;
+import pl.jordii.services.VetService;
 
 import java.util.Set;
 
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 
     @Override
     public Set<Vet> findAll() {
