@@ -5,6 +5,7 @@ import pl.jordii.model.Owner;
 import pl.jordii.services.CrudService;
 import pl.jordii.services.OwnerService;
 
+import java.util.Collections;
 import java.util.Set;
 
 @Service
@@ -39,4 +40,5 @@ public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements 
     public Owner findByLastName(String lastName) {
         return null;
     }
+
 }
