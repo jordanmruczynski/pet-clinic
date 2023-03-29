@@ -1,2 +1,2 @@
 # pet-clinic
-Pet Clinic
+Simple spring boot application with basic frontend (unfinished)
